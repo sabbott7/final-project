@@ -9,7 +9,6 @@ What you need:
 
 Python 3 (or higher)
 
-Sample Gameplay:
 
 
 /End
