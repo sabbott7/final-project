@@ -15,7 +15,7 @@ def printBoard(board):
         print(" ".join(row))
 
 #starting the game and printing the board
-print ("Let's play Battleship! Action Stations!")
+print ("Let's play Battleships! Action Stations!")
 printBoard(board)
 
 #place the ship using random co-ordinates
@@ -29,7 +29,7 @@ ship_row = random_row(board)
 ship_col = random_col(board)
 
 #get co-ordinates from user
-for strike in range(4):
+for strike in range(10):
     guess_row = int(input('Guess Row(0-4):'))
     guess_col = int(input('Guess Col(0-4):'))
 
@@ -54,11 +54,11 @@ for strike in range(4):
             board[guess_row][guess_col] = "X"
         
         # Print strike and board again here
-        print ('Strike ' + str(strike+1) + ' out of 4.')
+        print ('Strike ' + str(strike+1) + ' out of 10.')
         printBoard(board)
 
-#if the user has made 4 tries, it's game over
-if strike >= 3:
+#if the user has made 10 tries, it's game over
+if strike >= 9:
     print ('Game Over. You lost. Hard luck buddy!!')
     print ('My Ship Row = '+str(ship_row))
     print ('My Ship Col = '+str(ship_col))
