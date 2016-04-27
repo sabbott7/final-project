@@ -35,14 +35,14 @@ for strike in range(10):
 
     # if the user's right, the game ends
     if guess_row == ship_row and guess_col == ship_col:
-        print ('BRAVO! You sunk my battleship! You GOT ME !!')
+        print ('BRAVO! HIT !! You sunk my battleship! You GOT ME !!')
         print ('My Ship Row = '+str(ship_row))
         print ('My Ship Col = '+str(ship_col))
         break
     else:
         #validate the ship can be placed at given coordinates
         if (guess_row < 0 or guess_row > 4) or (guess_col < 0 or guess_col > 4):
-            print ("Ouch, that's not even in the ocean.")
+            print ("Ouch, that's not even in the ocean!")
         
         #warning if the guess was already made
         elif(board[guess_row][guess_col] == "X"):
